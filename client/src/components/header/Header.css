@@ -1,0 +1,197 @@
+#header {
+	position: fixed;
+	display: flex;
+	height: 6em;
+	width: 100vw;
+	justify-content: space-around;
+	background-color: white;
+	border-bottom: 1px solid var(--color-darkgray);
+	z-index: 2;
+	background-color: var(--color-background);
+	font-family: "Poppins";
+}
+
+#app-name {
+	padding: 0.5em;
+	font-weight: 500;
+	font-size: 2em;
+	display: flex;
+	font-family: "Poppins";
+}
+
+#sec-part {
+	color: var(--color-yellow);
+}
+
+#logo-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+}
+
+#logo {
+	margin-left: 30px;
+}
+
+#logo-and-name-wrapper {
+	display: flex;
+	align-items: center;
+	width: 40%;
+	cursor: pointer;
+}
+
+#navigation {
+	margin-right: 50px;
+}
+
+#navbar {
+    padding-right: 20px;
+}
+
+
+#login {
+	display: inline-block;
+	height: 50px;
+	position: absolute;
+	top: 40%;
+	right: 10px;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	min-width: 100px;
+}
+
+@media only screen and (min-width: 1200px) {
+	#header {
+		width: 75vw;
+	}
+}
+
+#navbar {
+	display: flex;
+	align-items: center;
+}
+
+#navigation {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 80%;
+}
+
+#nnavbar-wrapper {
+	display: flex;
+}
+
+#bar-icon-wrapper {
+	display: none;
+}
+#bar-icon {
+	max-width: 100%;
+	max-height: 70%;
+}
+
+#login {
+	margin: 0 auto;
+	color: var(--color-yellow);
+	border: 2px solid var(--color-yellow);
+	background-color: var(--color-background);
+	cursor: pointer;
+}
+
+#login:hover {
+	border-color: var(--color-darkgray);
+	background-color: var(--color-darkgray);
+	color: var(--color-yellow);
+}
+
+@media only screen and (max-width: 768px) {
+	#navbar {
+		display: none;
+	}
+	#bar-icon-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#navbar-wrapper {
+		position: fixed;
+		top: 6em;
+		right: 0;
+	}
+	#navbar {
+		flex-direction: column;
+		width: 300px;
+	}
+
+	#navigation:hover #navbar {
+		display: flex;
+	}
+
+	#app-name {
+		padding-left: 0;
+		font-size: 1.2rem;
+	}
+
+	#login {
+		position: absolute;
+		width: 80px;
+		height: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+	}
+	#bar-icon-wrapper {
+		margin-left: 50px;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 50%;
+		height: 100%;
+		transform: translateY(-50%);
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	#navbar {
+		flex-direction: column;
+		width: 100vw;
+	}
+	#logo-and-name-wrapper {
+		margin-left: -100px;
+	}
+
+	#logo {
+		width: 20px;
+		height: 25px;
+	}
+
+	#login {
+		position: absolute;
+		width: 80px;
+		height: 40px;
+		left: 20px;
+		text-align: center;
+		justify-content: center;
+	}
+
+	#navigation {
+		margin-right: 0;
+	}
+
+	#bar-icon-wrapper {
+		margin-left: 80px;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 50%;
+		height: 100%;
+		transform: translateY(-50%);
+	}
+}
+.dropdown-menu{
+	display: none;
+}
+.account-dropdown:hover .dropdown-menu {
+	display: block;
+}
